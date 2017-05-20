@@ -43,10 +43,11 @@
             android:layout_gravity="fill"
             android:layout_row="0"
             android:background="@color/amount_background"
-            android:elevation="24dp"
+            android:elevation="4dp"
             android:gravity="center_vertical"
             android:hint="@string/enter_amount"
             android:padding="@dimen/tv_padding"
+            android:textColor="@android:color/black"
             android:textColorHint="@android:color/black"
             android:textSize="@dimen/twenty_four" />
 
@@ -56,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
             android:text="@string/tip_percentsge"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/twenty_four" />
 
         <SeekBar
@@ -73,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:text="@string/tip"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/twenty_four" />
 
         <TextView
@@ -82,9 +83,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill_horizontal"
             android:background="@color/result_background"
-            android:elevation="24dp"
+            android:elevation="4dp"
             android:gravity="center"
             android:padding="@dimen/tv_padding"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/twenty_four" />
 
         <TextView
@@ -93,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:text="@string/total"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/twenty_four" />
 
         <TextView
@@ -102,9 +104,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill_horizontal"
             android:background="@color/result_background"
-            android:elevation="24dp"
+            android:elevation="4dp"
             android:gravity="center"
             android:padding="@dimen/tv_padding"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/twenty_four" />
     </GridLayout>
 </android.support.constraint.ConstraintLayout>
