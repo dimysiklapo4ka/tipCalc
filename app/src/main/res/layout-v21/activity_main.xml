@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gl_start_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.d1mys1klapo4ka.tipcalc.MainActivity">
+
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:columnCount="2"
+        android:elevation="24dp"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_amout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:digits="0123456789"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:layout_row="0"
+            android:background="@color/amount_background"
+            android:elevation="24dp"
+            android:gravity="center_vertical"
+            android:hint="@string/enter_amount"
+            android:padding="@dimen/tv_padding"
+            android:textColorHint="@android:color/black"
+            android:textSize="@dimen/twenty_four" />
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/tip_percentsge"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/twenty_four" />
+
+        <SeekBar
+            android:id="@+id/sb_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sb_height"
+            android:layout_gravity="fill_horizontal"
+            android:max="30"
+            android:progress="15" />
+
+        <TextView
+            android:id="@+id/tv_tip_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/tip"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/twenty_four" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/result_background"
+            android:elevation="24dp"
+            android:gravity="center"
+            android:padding="@dimen/tv_padding"
+            android:textSize="@dimen/twenty_four" />
+
+        <TextView
+            android:id="@+id/tv_total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/total"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/twenty_four" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/result_background"
+            android:elevation="24dp"
+            android:gravity="center"
+            android:padding="@dimen/tv_padding"
+            android:textSize="@dimen/twenty_four" />
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>

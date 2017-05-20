@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="twenty_four">24sp</dimen>
+    <dimen name="tv_padding">12dp</dimen>
+    <dimen name="sb_height">40dp</dimen>
+</resources>
